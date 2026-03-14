@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AMAL — Sequenza</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="gallery-page mode-image">
+  <a href="index.html" class="home-icon-btn" aria-label="Torna alla home">
+    <img src="img/ICONA_B.png" alt="Home" />
+  </a>
+
+  <main class="gallery-main">
+    <section class="gallery-wrapper">
+
+      <div class="content-stage">
+        <figure class="image-view is-visible" id="imageView">
+          <img id="mainImage" src="" alt="Immagine" />
+        </figure>
+
+        <section class="text-view" id="textView" aria-live="polite">
+          <div class="text-slide">
+            <p class="slide-main" id="slideMain"></p>
+            <p class="slide-sub" id="slideSub"></p>
+          </div>
+        </section>
+      </div>
+
+      <div class="progress-wrap" aria-hidden="true">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+
+      <div class="gallery-controls">
+        <button id="prevBtn" class="nav-btn" type="button" disabled>indietro</button>
+        <button id="nextBtn" class="nav-btn" type="button" disabled>prosegui</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="gallery.js"></script>
+</body>
+</html>
